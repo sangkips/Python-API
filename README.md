@@ -15,8 +15,11 @@ d) DELETE: deletes existing information
 Example of implementing GET request
 
 >>> import requests
+
 >>> response = requests.get('https://google.com')
+
 >>> print(response)
+
 <Response [200]>
 
 200 is a response code which can inform us on the state of the system state.
