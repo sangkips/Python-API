@@ -16,7 +16,7 @@ Example of implementing GET request
 
 >>> import requests
 
->>> response = requests.get('https://google.com')
+>>> response = requests.get('https://google.com') 
 
 >>> print(response)
 
@@ -24,7 +24,18 @@ Example of implementing GET request
 
 200 is a response code which can inform us on the state of the system state.
 
-Status codes
+Status Codes
+
+a) 200-OK. The request was successful.
+b) 204-No content. The server successfully processed the request and did not return any content.
+c) 301-Moved permanently. The server responds that the requested page(endpoint) has been moved to another address and redirects to this address.
+d) 400-Bad request. The server cannot process the request because the client-side-errors(incorect request format).
+e) 401-Unauthorized. Occurs when authentication failed due to incorrect credentials or even their absence.
+d) 403-Forbiden. Access to the specified resource is denied.
+e) 404-Not found. The requested resource was not found on the server.
+f) 500-Internal Server Error. Occurs when an unknown error has occurred on the server.
+
+
 
 
 
