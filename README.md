@@ -5,5 +5,23 @@ An API (Application Programming Interface) is a set of rules that are shared by 
 REST API (Representational state transfer) is an API that uses HTTPS requests for communication with web services.
 From the python site, the REST API can be viewed as data source located on an internet address that can be accessed in a certain way through certain libraries.
 
-Types of Requests
+Types of Requests:
+
 a) GET: retrieve information like a search result
+b) POST: adds new data to the server
+c) PUT: changes existing information
+d) DELETE: deletes existing information
+
+Example of implementing GET request
+
+>>> import requests
+>>> response = requests.get('https://google.com')
+>>> print(response)
+<Response [200]>
+
+200 is a response code which can inform us on the state of the system state.
+
+Status codes
+
+
+
